@@ -1,8 +1,8 @@
 function InventoryOverview() {
   return (
-    <main>
+    <div className="dashboard-content-inventory-overview">
       <h3>Inventory Info</h3>
-    </main>
+    </div>
   );
 }
 

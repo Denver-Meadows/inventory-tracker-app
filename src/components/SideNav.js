@@ -1,13 +1,13 @@
 function SideNav() {
   return (
-    <main>
+    <div className="dashboard-content-side-nav">
       <ul>
         <li>Dashboard</li>
         <li>Inventory</li>
         <li>Customers</li>
         <li>Suppliers</li>
       </ul>
-    </main>
+    </div>
   );
 }
 

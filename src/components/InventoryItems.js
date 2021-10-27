@@ -1,8 +1,8 @@
 function InventoryItems() {
   return (
-    <main>
+    <div className="dashboard-content-inventory-items">
       <h3>Paginated Inventory Listing</h3>
-    </main>
+    </div>
   );
 }
 

@@ -1,8 +1,8 @@
 function PurchaseOverview() {
   return (
-    <main>
+    <div className="dashboard-content-purchase">
       <h3>Purchase Info</h3>
-    </main>
+    </div>
   );
 }
 

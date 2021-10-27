@@ -1,8 +1,8 @@
 function SalesOverview() {
   return (
-    <main>
+    <div className="dashboard-content-sales">
       <h3>Sales Info</h3>
-    </main>
+    </div>
   );
 }
 

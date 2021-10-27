@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dashboard {
+  background-color: rgb(37, 182, 182);
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dashboard-content {
+  background-color: rgb(255, 254, 254);
+  height: 85vh;
+  width: 90vw;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-rows: minmax(min-content, 2rem) 1fr 1fr 1fr;
+  grid-template-columns: minmax(min-content, 15rem) 1fr 1fr;
+  grid-gap: 20px;
+  // minmax(min-content, 0.5rem)
+  &-info-bar {
+    border: 1px solid blue;
+    padding: 1rem 1rem;
+    grid-column: 1 / 4;
+  }
+
+  &-side-nav {
+    border: 1px solid blue;
+    grid-row: 2 / 5;
+    padding-left: 1rem;
+  }
+  &-sales {
+    border: 1px solid blue;
+  }
+  &-purchase {
+    border: 1px solid blue;
+  }
+  &-inventory-overview {
+    border: 1px solid blue;
+    grid-column: 2 / 4;
+  }
+  &-inventory-items {
+    border: 1px solid blue;
+    grid-column: 2 / 4;
+  }
+}

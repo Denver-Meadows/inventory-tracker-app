@@ -1,6 +1,6 @@
 function TopInfoBar() {
   return (
-    <div className="top-info-bar">
+    <div className="dashboard-content-info-bar">
       <h2>Inventory</h2>
     </div>
   );
