@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+// Dashboard
 .dashboard {
   background-color: rgb(37, 182, 182);
   height: 100vh;
@@ -19,13 +20,16 @@
   border-radius: 1rem;
   display: grid;
   grid-template-rows: minmax(min-content, 2rem) 1fr 1fr 1fr;
-  grid-template-columns: minmax(min-content, 15rem) 1fr 1fr;
+  grid-template-columns: minmax(min-content, 15%) 1fr 1fr;
   grid-gap: 20px;
-  // minmax(min-content, 0.5rem)
+
   &-info-bar {
     border: 1px solid blue;
     padding: 1rem 1rem;
     grid-column: 1 / 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &-side-nav {
@@ -46,5 +50,16 @@
   &-inventory-items {
     border: 1px solid blue;
     grid-column: 2 / 4;
+  }
+}
+
+// Top Info Bar
+.user-info {
+  display: flex;
+  align-items: center;
+
+  &-item {
+    padding-left: 1rem;
+    font-size: 1.5rem;
   }
 }
