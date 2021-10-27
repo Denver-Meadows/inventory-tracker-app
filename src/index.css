@@ -17,4 +17,13 @@
   height: 85vh;
   width: 90vw;
   border-radius: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.top-info-bar {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid blue;
+  padding: 1rem 1rem;
 }

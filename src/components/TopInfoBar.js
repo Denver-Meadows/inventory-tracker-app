@@ -1,8 +1,8 @@
 function TopInfoBar() {
   return (
-    <main>
+    <div className="top-info-bar">
       <h2>Inventory</h2>
-    </main>
+    </div>
   );
 }
 
