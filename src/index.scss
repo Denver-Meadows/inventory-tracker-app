@@ -35,7 +35,7 @@
   &-side-nav {
     border: 1px solid blue;
     grid-row: 2 / 5;
-    padding-left: 1rem;
+    padding: 2rem;
   }
   &-sales {
     border: 1px solid blue;
@@ -61,5 +61,14 @@
   &-item {
     padding-left: 1rem;
     font-size: 1.5rem;
+  }
+}
+
+// Side Nav
+.side-nav {
+  list-style: none;
+
+  &-item {
+    margin: 0.5rem 0.5rem 2rem 0.5rem;
   }
 }
