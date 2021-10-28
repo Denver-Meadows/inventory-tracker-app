@@ -1,3 +1,37 @@
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: rgb(37, 182, 182);
+  /* primary grey background */
+  --clr-primary-2: rgb(240, 238, 238);
+  /* primary white background */
+  --clr-primary-3: rgb(255, 254, 254);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #222;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +40,7 @@
 
 // Dashboard
 .dashboard {
-  background-color: rgb(37, 182, 182);
+  background-color: var(--clr-primary-1);
   height: 100vh;
   display: flex;
   justify-content: space-around;
@@ -14,7 +48,7 @@
 }
 
 .dashboard-content {
-  background-color: rgb(240, 238, 238);
+  background-color: var(--clr-primary-2);
 
   height: 85vh;
   width: 90vw;
@@ -22,9 +56,10 @@
   display: grid;
   grid-template-rows: minmax(min-content, 2rem) 1fr 1fr 1fr;
   grid-template-columns: minmax(min-content, 15%) 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 1rem;
 
   &-info-bar {
+    background-color: var(--clr-primary-3);
     border: 1px solid blue;
     padding: 1rem 1rem;
     grid-column: 1 / 4;
@@ -34,6 +69,7 @@
   }
 
   &-side-nav {
+    background-color: var(--clr-primary-3);
     border: 1px solid blue;
     grid-row: 2 / 5;
     padding: 2rem;
@@ -79,14 +115,14 @@
   height: 100%;
 
   & h4 {
-    background-color: rgb(255, 254, 254);
+    background-color: var(--clr-primary-3);
     padding-left: 2rem;
     padding-top: 1rem;
     font-size: 1.5rem;
   }
 
   &-items {
-    background-color: rgb(255, 254, 254);
+    background-color: var(--clr-primary-3);
     display: grid;
     grid-template-rows: repeat(2, minmax(min-content, 6rem));
     grid-template-columns: repeat(2, 1fr);
