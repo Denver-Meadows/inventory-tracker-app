@@ -14,7 +14,8 @@
 }
 
 .dashboard-content {
-  background-color: rgb(255, 254, 254);
+  background-color: rgb(240, 238, 238);
+
   height: 85vh;
   width: 90vw;
   border-radius: 1rem;
@@ -71,4 +72,41 @@
   &-item {
     margin: 0.5rem 0.5rem 2rem 0.5rem;
   }
+}
+
+// Sales-Overview
+.sales-overview {
+  height: 100%;
+
+  & h4 {
+    background-color: rgb(255, 254, 254);
+    padding-left: 2rem;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+  }
+
+  &-items {
+    background-color: rgb(255, 254, 254);
+    display: grid;
+    grid-template-rows: repeat(2, minmax(min-content, 6rem));
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    // justify-items: center;
+    grid-gap: 10px;
+
+    &-item {
+      margin-left: 4rem;
+      // padding: 1rem;
+      // margin: 2rem 3rem 1rem 3rem;
+      display: flex;
+    }
+  }
+
+  .sales-overview-item-icon {
+    font-size: 3rem;
+  }
+}
+
+.sales-overview-item-stats {
+  margin-left: 0.7rem;
 }
