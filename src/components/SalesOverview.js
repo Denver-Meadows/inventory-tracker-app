@@ -44,7 +44,7 @@ function SalesOverview() {
             </div>
             <div className="sales-overview-item-stats">
               <p>Profit</p>
-              <h5>500</h5>
+              <h2>500</h2>
             </div>
           </div>
         </div>
