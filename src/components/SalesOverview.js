@@ -26,7 +26,7 @@ function SalesOverview() {
             </div>
             <div className="sales-overview-item-stats">
               <p>Revenue</p>
-              <h2>$7384</h2>
+              <h2>7384</h2>
             </div>
           </div>
           <div className="sales-overview-items-item">
@@ -35,7 +35,7 @@ function SalesOverview() {
             </div>
             <div className="sales-overview-item-stats">
               <p>Cost</p>
-              <h2>$5384</h2>
+              <h2>5384</h2>
             </div>
           </div>
           <div className="sales-overview-items-item">
@@ -44,7 +44,7 @@ function SalesOverview() {
             </div>
             <div className="sales-overview-item-stats">
               <p>Profit</p>
-              <h2>$500</h2>
+              <h5>500</h5>
             </div>
           </div>
         </div>
