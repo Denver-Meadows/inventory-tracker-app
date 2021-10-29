@@ -7,8 +7,8 @@ import {
 
 function SalesOverview() {
   return (
-    <div className="dashboard-content-sales">
-      <div className="sales-overview">
+    <main className="dashboard-content-sales">
+      <article className="sales-overview">
         <h4>Sales Overview</h4>
         <div className="sales-overview-items">
           <div className="sales-overview-items-item">
@@ -26,7 +26,7 @@ function SalesOverview() {
             </div>
             <div className="sales-overview-item-stats">
               <p>Revenue</p>
-              <h2>7384</h2>
+              <h2>$7384</h2>
             </div>
           </div>
           <div className="sales-overview-items-item">
@@ -35,7 +35,7 @@ function SalesOverview() {
             </div>
             <div className="sales-overview-item-stats">
               <p>Cost</p>
-              <h2>5384</h2>
+              <h2>$5384</h2>
             </div>
           </div>
           <div className="sales-overview-items-item">
@@ -44,12 +44,12 @@ function SalesOverview() {
             </div>
             <div className="sales-overview-item-stats">
               <p>Profit</p>
-              <h2>500</h2>
+              <h2>$500</h2>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </article>
+    </main>
   );
 }
 

@@ -4,7 +4,7 @@ import { BiBuildings } from "react-icons/bi";
 
 function SideNav() {
   return (
-    <div className="dashboard-content-side-nav">
+    <aside className="dashboard-content-side-nav">
       <ul className="side-nav">
         <li className="side-nav-item">
           {" "}
@@ -27,7 +27,7 @@ function SideNav() {
           <BiBuildings /> Suppliers
         </li>
       </ul>
-    </div>
+    </aside>
   );
 }
 

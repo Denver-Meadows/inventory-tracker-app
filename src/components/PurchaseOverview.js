@@ -2,8 +2,8 @@ import { FcBarChart, FcCancel, FcBearish, FcLeft } from "react-icons/fc";
 
 function PurchaseOverview() {
   return (
-    <div className="dashboard-content-sales">
-      <div className="sales-overview">
+    <main className="dashboard-content-sales">
+      <article className="sales-overview">
         <h4>Purchases Overview</h4>
         <div className="sales-overview-items">
           <div className="sales-overview-items-item">
@@ -43,8 +43,8 @@ function PurchaseOverview() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </article>
+    </main>
   );
 }
 
