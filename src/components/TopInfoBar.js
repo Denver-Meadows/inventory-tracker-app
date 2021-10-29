@@ -4,7 +4,7 @@ import { FiSettings } from "react-icons/fi";
 
 function TopInfoBar() {
   return (
-    <div className="dashboard-content-info-bar">
+    <header className="dashboard-content-info-bar">
       <div className="logo">
         <h2>
           <BsBox /> Inventory+
@@ -21,7 +21,7 @@ function TopInfoBar() {
           <FiSettings />
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 

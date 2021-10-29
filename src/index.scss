@@ -146,3 +146,31 @@
 .sales-overview-item-stats {
   margin-left: 0.7rem;
 }
+
+// Inventory Overview
+.inventory-overview {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+
+  &-article {
+    background-color: var(--clr-primary-3);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 19rem;
+
+    &-content {
+      display: flex;
+      justify-content: space-between;
+
+      &-summary {
+        background-color: var(--clr-primary-2);
+      }
+    }
+  }
+}
+
+.inventory-icon {
+  font-size: 3rem;
+}
