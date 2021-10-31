@@ -186,3 +186,62 @@
 .inventory-icon {
   font-size: 3rem;
 }
+
+// Product details
+.product-details {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 0.5rem;
+    border-bottom: var(--clr-primary-2) solid 3px;
+  }
+}
+
+/* For large screens
+.dashboard-content {
+  background-color: var(--clr-primary-2);
+
+  height: 88vh;
+  width: 92vw;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-rows: minmax(min-content, 2rem) 1fr 1fr 1fr;
+  grid-template-columns: minmax(min-content, 15%) 1fr 1fr;
+  grid-gap: 1rem;
+
+  &-info-bar {
+    background-color: var(--clr-primary-3);
+    border: 1px solid blue;
+    padding: 1rem 1rem;
+    grid-column: 1 / 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-side-nav {
+    background-color: var(--clr-primary-3);
+    border: 1px solid blue;
+    grid-row: 2 / 5;
+    padding: 2rem;
+  }
+  &-sales {
+    border: 1px solid blue;
+  }
+  &-purchase {
+    border: 1px solid blue;
+  }
+  &-inventory-overview {
+    border: 1px solid blue;
+    grid-column: 2 / 4;
+  }
+  &-inventory-items {
+    border: 1px solid blue;
+    grid-column: 2 / 4;
+  }
+}
+*/
