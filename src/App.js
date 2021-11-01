@@ -16,7 +16,6 @@ function App() {
         <SalesOverview />
         <PurchaseOverview />
         <InventoryOverview />
-        <InventoryItems />
       </div>
     </main>
   );
