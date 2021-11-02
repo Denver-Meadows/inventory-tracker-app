@@ -23,13 +23,12 @@
 }
 
 .dashboard-content {
-  background-color: var(--clr-primary-2);
-
-  height: 88vh;
-  width: 92vw;
-  border-radius: 1rem;
+  // background-color: var(--clr-primary-2);
+  height: 80%;
+  width: 75%;
+  // border-radius: 1rem;
   display: grid;
-  grid-template-rows: minmax(min-content, 2rem) 1fr 1fr;
+  grid-template-rows: minmax(min-content, 2rem) 30% 30% 30%;
   grid-template-columns: minmax(min-content, 15%) 1fr 1fr;
   grid-gap: 1rem;
 
@@ -46,7 +45,7 @@
   &-side-nav {
     background-color: var(--clr-primary-3);
     // border: 1px solid blue;
-    grid-row: 2 / 4;
+    grid-row: 2 / 5;
     padding: 2rem;
   }
   &-sales {
@@ -60,10 +59,15 @@
     // border: 1px solid blue;
     grid-column: 2 / 4;
   }
-  // &-inventory-items {
-  //   // border: 1px solid blue;
-  //   grid-column: 2 / 4;
-  // }
+  &-inventory-chart {
+    // border: 1px solid blue;
+    grid-column: 2 / 4;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: end;
+  }
 }
 
 // Top Info Bar
@@ -88,24 +92,26 @@
 
 // Sales-Overview
 .sales-overview {
-  height: 100%;
+  // height: 100%;
   border-radius: 10px;
+  background-color: var(--clr-primary-3);
+  margin-right: 1rem;
+  margin-left: 1rem;
 
   & h4 {
-    background-color: var(--clr-primary-3);
     padding-left: 2rem;
     padding-top: 1rem;
     font-size: 1.5rem;
   }
 
   &-items {
-    background-color: var(--clr-primary-3);
     display: grid;
     grid-template-rows: repeat(2, minmax(min-content, 6rem));
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     // justify-items: center;
     grid-gap: 10px;
+    // height: 100%;
 
     &-item {
       margin-left: 4rem;
@@ -135,7 +141,8 @@
     background-color: var(--clr-primary-3);
     padding: 1.5rem;
     border-radius: 10px;
-    width: 19rem;
+    width: 21rem;
+    height: 14rem;
 
     h3 {
       margin-bottom: 0.5rem;
@@ -144,7 +151,7 @@
 
     &-content {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
 
       &-summary {
         background-color: var(--clr-primary-2);
@@ -178,47 +185,56 @@
   }
 }
 
-/* For large screens
-.dashboard-content {
-  background-color: var(--clr-primary-2);
+// Inventory chart
+.inventory-chart {
+  // width: 80%;
+  height: 100%;
+}
 
-  height: 88vh;
-  width: 92vw;
-  border-radius: 1rem;
-  display: grid;
-  grid-template-rows: minmax(min-content, 2rem) 1fr 1fr 1fr;
-  grid-template-columns: minmax(min-content, 15%) 1fr 1fr;
-  grid-gap: 1rem;
+/*
+@media (min-width: 1400px) {
+  .dashboard-content {
+    background-color: var(--clr-primary-2);
 
-  &-info-bar {
-    background-color: var(--clr-primary-3);
-    border: 1px solid blue;
-    padding: 1rem 1rem;
-    grid-column: 1 / 4;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+    height: 88vh;
+    width: 92vw;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-rows: minmax(min-content, 2rem) 1fr 1fr 1fr;
+    grid-template-columns: minmax(min-content, 15%) 1fr 1fr;
+    grid-gap: 1rem;
 
-  &-side-nav {
-    background-color: var(--clr-primary-3);
-    border: 1px solid blue;
-    grid-row: 2 / 5;
-    padding: 2rem;
-  }
-  &-sales {
-    border: 1px solid blue;
-  }
-  &-purchase {
-    border: 1px solid blue;
-  }
-  &-inventory-overview {
-    border: 1px solid blue;
-    grid-column: 2 / 4;
-  }
-  &-inventory-items {
-    border: 1px solid blue;
-    grid-column: 2 / 4;
+    &-info-bar {
+      background-color: var(--clr-primary-3);
+      border: 1px solid blue;
+      padding: 1rem 1rem;
+      grid-column: 1 / 4;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-side-nav {
+      background-color: var(--clr-primary-3);
+      border: 1px solid blue;
+      grid-row: 2 / 5;
+      padding: 2rem;
+    }
+    &-sales {
+      border: 1px solid blue;
+    }
+    &-purchase {
+      border: 1px solid blue;
+    }
+    &-inventory-overview {
+      border: 1px solid blue;
+      grid-column: 2 / 4;
+    }
+    &-inventory-chart {
+      border: 1px solid blue;
+      grid-column: 2 / 4;
+      width: 90%;
+    }
   }
 }
 */

@@ -3,7 +3,7 @@ import TopInfoBar from "./components/TopInfoBar";
 import SalesOverview from "./components/SalesOverview";
 import PurchaseOverview from "./components/PurchaseOverview";
 import InventoryOverview from "./components/InventoryOverview";
-import InventoryItems from "./components/InventoryItems";
+import InventoryChart from "./components/InventoryChart";
 
 // Refactor to remove bottom paginated inventory listing on small screens.  Only there on large screens.
 
@@ -16,6 +16,7 @@ function App() {
         <SalesOverview />
         <PurchaseOverview />
         <InventoryOverview />
+        <InventoryChart />
       </div>
     </main>
   );
