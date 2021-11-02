@@ -8,41 +8,41 @@ import {
 function SalesOverview() {
   return (
     <main className="dashboard-content-sales">
-      <article className="sales-overview">
+      <article className="sales-purchases-overview">
         <h4>Sales Overview</h4>
-        <div className="sales-overview-items">
-          <div className="sales-overview-items-item">
-            <div className="sales-overview-item-icon">
+        <div className="sales-purchases-overview-items">
+          <div className="sales-purchases-overview-items-item">
+            <div className="sales-purchases-overview-item-icon">
               <FcSalesPerformance />
             </div>{" "}
-            <div className="sales-overview-item-stats">
+            <div className="sales-purchases-overview-item-stats">
               <p>Total Sales</p>
               <h2>$786</h2>
             </div>
           </div>
-          <div className="sales-overview-items-item">
-            <div className="sales-overview-item-icon">
+          <div className="sales-purchases-overview-items-item">
+            <div className="sales-purchases-overview-item-icon">
               <FcBullish />
             </div>
-            <div className="sales-overview-item-stats">
+            <div className="sales-purchases-overview-item-stats">
               <p>Revenue</p>
               <h2>$7384</h2>
             </div>
           </div>
-          <div className="sales-overview-items-item">
-            <div className="sales-overview-item-icon">
+          <div className="sales-purchases-overview-items-item">
+            <div className="sales-purchases-overview-item-icon">
               <FcBearish />
             </div>
-            <div className="sales-overview-item-stats">
+            <div className="sales-purchases-overview-item-stats">
               <p>Cost</p>
               <h2>$5384</h2>
             </div>
           </div>
-          <div className="sales-overview-items-item">
-            <div className="sales-overview-item-icon">
+          <div className="sales-purchases-overview-items-item">
+            <div className="sales-purchases-overview-item-icon">
               <FcMoneyTransfer />
             </div>
-            <div className="sales-overview-item-stats">
+            <div className="sales-purchases-overview-item-stats">
               <p>Profit</p>
               <h2>$500</h2>
             </div>

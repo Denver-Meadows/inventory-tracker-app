@@ -5,32 +5,23 @@ function InventoryChart() {
     <main className="dashboard-content-inventory-chart">
       <div className="chart-container">
         <Chart
-          className="inventory-chart"
-          chartType="LineChart"
+          chartType="AreaChart"
           loader={<div>Loading Chart</div>}
           data={[
-            ["x", "sales", "purchase"],
-            [0, 20, 10],
-            [1, 10, 5],
-            [2, 23, 15],
-            [3, 17, 9],
-            [4, 18, 10],
-            [5, 9, 5],
-            [6, 11, 3],
-            [7, 27, 19],
+            ["Year", "Sales", "Expenses"],
+            ["2013", 1000, 400],
+            ["2014", 1170, 460],
+            ["2015", 660, 1120],
+            ["2016", 1030, 540],
           ]}
           options={{
-            hAxis: {
-              title: "Time",
-            },
-            vAxis: {
-              title: "Popularity",
-            },
-            series: {
-              1: { curveType: "function" },
-            },
+            title: "Company Performance",
+            hAxis: { title: "Year", titleTextStyle: { color: "#333" } },
+            vAxis: { minValue: 0 },
+            // For the legend to fit, we make the chart area smaller
+            chartArea: { width: "50%", height: "70%" },
+            // lineWidth: 25
           }}
-          rootProps={{ "data-testid": "2" }}
         />
       </div>
     </main>
@@ -38,3 +29,34 @@ function InventoryChart() {
 }
 
 export default InventoryChart;
+
+{
+  /* <Chart
+className="inventory-chart"
+chartType="LineChart"
+loader={<div>Loading Chart</div>}
+data={[
+  ["x", "sales", "purchase"],
+  [0, 20, 10],
+  [1, 10, 5],
+  [2, 23, 15],
+  [3, 17, 9],
+  [4, 18, 10],
+  [5, 9, 5],
+  [6, 11, 3],
+  [7, 27, 19],
+]}
+options={{
+  hAxis: {
+    title: "Time",
+  },
+  vAxis: {
+    title: "Popularity",
+  },
+  series: {
+    1: { curveType: "function" },
+  },
+}}
+rootProps={{ "data-testid": "2" }}
+/> */
+}
