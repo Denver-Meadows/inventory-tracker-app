@@ -20,7 +20,6 @@ body {
 // Dashboard
 .dashboard {
   // background-color: var(--clr-primary-1);
-  // height: 60rem;
   display: flex;
   justify-content: space-around;
   padding-top: 2rem;
@@ -28,57 +27,50 @@ body {
 
 .dashboard-content {
   background-color: var(--clr-primary-2);
-  // border-radius: 1rem;
   display: grid;
   grid-template-rows: minmax(min-content, 2rem) 1fr 1fr 1fr;
   grid-template-columns: minmax(min-content, 18%) 0.7fr 1.11fr;
-  grid-gap: 1rem;
+  grid-gap: 0.7rem;
+  width: fit-content;
+  border-radius: 10px;
 
   &-info-bar {
     background-color: var(--clr-primary-3);
-    // border: 1px solid blue;
     padding: 1rem 1rem;
     grid-column: 1 / 4;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 10px;
   }
 
   &-side-nav {
     background-color: var(--clr-primary-3);
-    // border: 1px solid blue;
     grid-row: 2 / 5;
     padding: 2rem;
+    border-radius: 10px;
   }
   &-product-details {
     grid-column: 2 / 3;
   }
   &-num-users {
     grid-column: 2/3;
-    grid-row: 3;
+    grid-row: 4;
   }
   &-inventory-summary {
     grid-column: 2/3;
-    grid-row: 4;
+    grid-row: 3;
   }
   &-sales {
-    // border: 1px solid blue;
     grid-column: 3 / 4;
     grid-row: 2;
   }
   &-purchases {
-    // border: 1px solid blue;
     grid-column: 3 / 4;
     grid-row: 3;
   }
   &-inventory-chart {
-    // border: 1px solid blue;
     grid-column: 3 / 4;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: end;
   }
 }
 
@@ -104,15 +96,14 @@ body {
 
 // Sales-Overview
 .sales-overview {
-  // height: 100%;
   border-radius: 10px;
   background-color: var(--clr-primary-3);
   margin-right: 1rem;
   margin-left: 1rem;
+  width: 32rem;
 
   & h4 {
     padding-left: 2rem;
-    padding-top: 1rem;
     font-size: 1.5rem;
   }
 
@@ -121,14 +112,10 @@ body {
     grid-template-rows: repeat(2, minmax(min-content, 6rem));
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    // justify-items: center;
-    grid-gap: 10px;
-    // height: 100%;
+    grid-gap: 5px;
 
     &-item {
-      margin-left: 4rem;
-      // padding: 1rem;
-      // margin: 2rem 3rem 1rem 3rem;
+      margin-left: 3rem;
       display: flex;
     }
   }
@@ -206,9 +193,13 @@ body {
 }
 
 // Inventory chart
-.inventory-chart {
-  // width: 80%;
+.chart-container {
+  margin-right: 1rem;
+  margin-left: 1rem;
   height: 100%;
+  background-color: var(--clr-primary-3);
+  border-radius: 10px;
+  padding-top: 1rem;
 }
 
 /*
