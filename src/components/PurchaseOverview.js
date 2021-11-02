@@ -2,7 +2,7 @@ import { FcBarChart, FcCancel, FcBearish, FcLeft } from "react-icons/fc";
 
 function PurchaseOverview() {
   return (
-    <main className="dashboard-content-sales">
+    <main className="dashboard-content-purchases">
       <article className="sales-overview">
         <h4>Purchases Overview</h4>
         <div className="sales-overview-items">

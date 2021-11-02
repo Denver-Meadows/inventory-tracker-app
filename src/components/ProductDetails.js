@@ -2,7 +2,7 @@ import { FcComboChart, FcShipped } from "react-icons/fc";
 
 function ProductDetails() {
   return (
-    <article className="inventory-overview-article">
+    <article className="dashboard-content-product-details info-component">
       <h3>Product Details</h3>
       <div className="product-details">
         <div className="product-details-item">

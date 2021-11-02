@@ -2,7 +2,7 @@ import { FcConferenceCall, FcOrganization } from "react-icons/fc";
 
 function NumOfUsers() {
   return (
-    <article className="inventory-overview-article">
+    <article className="dashboard-content-num-users inventory-overview-article">
       <h3>Number of Users</h3>
       <div className="inventory-overview-article-content">
         <div className="inventory-overview-article-content-summary">
