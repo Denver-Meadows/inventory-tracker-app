@@ -13,13 +13,17 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--clr-primary-1);
+}
+
 // Dashboard
 .dashboard {
-  background-color: var(--clr-primary-1);
-  height: 100vh;
+  // background-color: var(--clr-primary-1);
+  // height: 60rem;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  padding-top: 2rem;
 }
 
 .dashboard-content {
