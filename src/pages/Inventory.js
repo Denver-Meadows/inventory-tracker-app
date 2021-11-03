@@ -6,10 +6,10 @@ import SideNav from "../components/SideNav";
 const Inventory = () => {
   return (
     <main className="dashboard">
-      <div className="inventory-page">
+      <div className="single-page">
         <TopInfoBar />
         <SideNav />
-        <div className="inventory-page-review">
+        <div className="single-page-overview">
           <h1>review inventory</h1>
         </div>
       </div>

@@ -1,10 +1,17 @@
 import DashboardLink from "../components/DashboardLink";
+import TopInfoBar from "../components/TopInfoBar";
+import SideNav from "../components/SideNav";
 
 function ErrorPage() {
   return (
     <main className="dashboard">
-      <h1>Sorry, wrong page</h1>
-      <DashboardLink />
+      <div className="single-page">
+        <TopInfoBar />
+        <SideNav />
+        <div className="single-page-overview">
+          <h1>Sorry Wrong Page!</h1>
+        </div>
+      </div>
     </main>
   );
 }
