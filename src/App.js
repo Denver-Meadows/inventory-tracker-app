@@ -5,6 +5,7 @@ import Customers from "./pages/Customers";
 import Suppliers from "./pages/Suppliers";
 import Inventory from "./pages/Inventory";
 import Purchasing from "./pages/Purchasing";
+import TopInfoBar from "../src/components/TopInfoBar";
 
 function App() {
   return (
