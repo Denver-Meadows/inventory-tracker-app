@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
 :root {
   /* dark shades of primary color*/
   --clr-primary-1: rgb(37, 182, 182);
@@ -15,6 +17,7 @@
 
 body {
   background-color: var(--clr-primary-1);
+  font-family: "Open Sans", sans-serif;
 }
 
 // Dashboard
@@ -30,7 +33,7 @@ body {
   background-color: var(--clr-primary-2);
   display: grid;
   grid-template-rows: minmax(min-content, 2rem) 1fr 1fr 1fr;
-  grid-template-columns: minmax(min-content, 18%) 0.7fr 1.11fr;
+  grid-template-columns: minmax(min-content, 20%) 0.7fr 1.11fr;
   grid-gap: 0.7rem;
   width: fit-content;
   border-radius: 10px;
@@ -91,6 +94,7 @@ body {
 // Side Nav
 .side-nav {
   list-style: none;
+  font-size: 1.2rem;
 
   &-item {
     margin: 0.5rem 0.5rem 2rem 0.5rem;
@@ -107,8 +111,8 @@ body {
 
   & h4 {
     padding-left: 2rem;
-    font-size: 1.5rem;
-    // padding-top: 0.2rem;
+    font-size: 1.3rem;
+    padding-top: 0.3rem;
   }
 
   &-items {
@@ -131,6 +135,7 @@ body {
 
 .sales-purchases-overview-item-stats {
   margin-left: 0.7rem;
+  font-size: 1.1rem;
 }
 
 // Inventory Overview

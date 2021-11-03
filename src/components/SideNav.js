@@ -16,7 +16,7 @@ function SideNav() {
         </li>
         <li className="side-nav-item">
           {" "}
-          <BsCartCheck /> Purchase
+          <BsCartCheck /> Purchasing
         </li>
         <li className="side-nav-item">
           {" "}

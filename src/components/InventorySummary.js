@@ -12,7 +12,7 @@ function InventorySummary() {
         </div>
         <div className="inventory-overview-article-content-summary">
           <FcShipped className="inventory-icon" />
-          <p>Will be Received</p>
+          <p>To be Received</p>
           <h3>30</h3>
         </div>
       </div>
