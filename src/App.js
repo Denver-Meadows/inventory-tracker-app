@@ -1,27 +1,13 @@
-import SideNav from "./components/SideNav";
-import TopInfoBar from "./components/TopInfoBar";
-import SalesOverview from "./components/SalesOverview";
-import PurchaseOverview from "./components/PurchaseOverview";
-import InventoryOverview from "./components/InventoryOverview";
-import InventoryChart from "./components/InventoryChart";
-import ProductDetails from "./components/ProductDetails";
-import NumOfUsers from "./components/NumOfUsers";
-import InventorySummary from "./components/InventorySummary";
+import { Switch, Route } from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
-    <main className="dashboard">
-      <div className="dashboard-content">
-        <TopInfoBar />
-        <SideNav />
-        <ProductDetails />
-        <NumOfUsers />
-        <InventorySummary />
-        <SalesOverview />
-        <PurchaseOverview />
-        <InventoryChart />
-      </div>
-    </main>
+    <Switch>
+      <Route path="/" exact>
+        <Dashboard />
+      </Route>
+    </Switch>
   );
 }
 
